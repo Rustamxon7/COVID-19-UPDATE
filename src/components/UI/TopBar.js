@@ -5,12 +5,13 @@ import { IoIosArrowBack, IoMdSettings } from 'react-icons/io';
 import { BiMicrophone } from 'react-icons/bi';
 
 const TopBar = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { day } = props;
 
   return (
     <div className="top__bar">
       <NavLink to="/" exact className="left-nav" activeClassName="active-link">
-        <IoIosArrowBack className="back"/>
+        <IoIosArrowBack className="back" />
       </NavLink>
       <div className="date">{day}</div>
       <div className="settings">

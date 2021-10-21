@@ -1,11 +1,15 @@
+/* eslint-disable no-return-assign */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable no-sequences */
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import './Country.css';
-import { BarChart, Bar, XAxis, CartesianGrid, Tooltip } from 'recharts';
+import {
+  BarChart, Bar, XAxis, CartesianGrid, Tooltip,
+} from 'recharts';
 import TopBar from '../UI/TopBar';
 import { fetchPostsRequestHistory } from '../../redux/covid-19/covidHistory';
 import LineChart from './Chart';
@@ -90,7 +94,11 @@ const Country = () => {
           </div>
           <div className="country__name">
             <h1 className="country__name__title">{data.name}</h1>
-            <h2 className="country__name__today">Total: {data.today_confirmed.toLocaleString()}</h2>
+            <h2 className="country__name__today">
+              Total:
+              {' '}
+              {data.today_confirmed.toLocaleString()}
+            </h2>
           </div>
         </div>
       </MediaQuery>
@@ -102,7 +110,11 @@ const Country = () => {
             </div>
             <div className="country__name">
               <h1 className="country__name__title">{data.name}</h1>
-              <h2 className="country__name__today">Total: {data.today_confirmed.toLocaleString()}</h2>
+              <h2 className="country__name__today">
+                Total:
+                {' '}
+                {data.today_confirmed.toLocaleString()}
+              </h2>
             </div>
           </div>
         )}
@@ -121,84 +133,124 @@ const Country = () => {
             <div
               className="case1"
               onClick={() => {
-                handleChartData(`today_confirmed`);
+                handleChartData('today_confirmed');
               }}
             >
               <div>Today Confirmed</div>
-              <div>{data.today_confirmed.toLocaleString()} cases</div>
+              <div>
+                {data.today_confirmed.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
 
             <div
               className="case2"
               onClick={() => {
-                handleChartData(`today_new_confirmed`);
+                handleChartData('today_new_confirmed');
               }}
             >
               <div>Today New Confirmed</div>
-              <div>{data.today_new_confirmed.toLocaleString()} cases</div>
+              <div>
+                {data.today_new_confirmed.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div
               className="case1"
               onClick={() => {
-                handleChartData(`today_deaths`);
+                handleChartData('today_deaths');
               }}
             >
               <div>Today Deaths</div>
-              <div>{data.today_deaths.toLocaleString()} cases</div>
+              <div>
+                {data.today_deaths.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div
               className="case2"
               onClick={() => {
-                handleChartData(`today_new_deaths`);
+                handleChartData('today_new_deaths');
               }}
             >
               <div>Today New Deaths</div>
-              <div>{data.today_new_deaths.toLocaleString()} cases</div>
+              <div>
+                {data.today_new_deaths.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div
               className="case1"
               onClick={() => {
-                handleChartData(`today_open_cases`);
+                handleChartData('today_open_cases');
               }}
             >
               <div>Today Open Cases</div>
-              <div>{data.today_open_cases.toLocaleString()} cases</div>
+              <div>
+                {data.today_open_cases.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div
               className="case2"
               onClick={() => {
-                handleChartData(`today_new_open_cases`);
+                handleChartData('today_new_open_cases');
               }}
             >
               <div>Today New Open Cases</div>
-              <div>{data.today_new_open_cases.toLocaleString()} cases</div>
+              <div>
+                {data.today_new_open_cases.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div
               className="case1"
               onClick={() => {
-                handleChartData(`today_new_recovered`);
+                handleChartData('today_new_recovered');
               }}
             >
               <div>Today New Recovered</div>
-              <div>{data.today_new_recovered.toLocaleString()} cases</div>
+              <div>
+                {data.today_new_recovered.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
 
             <div
               className="case2"
               onClick={() => {
-                handleChartData(`today_recovered`);
+                handleChartData('today_recovered');
               }}
             >
               <div>Today Recovered</div>
-              <div>{data.today_recovered.toLocaleString()} cases</div>
+              <div>
+                {data.today_recovered.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div className="case1">
               <div>Yesterday Confirmed</div>
-              <div>{data.yesterday_confirmed.toLocaleString()} cases</div>
+              <div>
+                {data.yesterday_confirmed.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div className="case2">
               <div>Yesterday Deaths</div>
-              <div>{data.yesterday_deaths.toLocaleString()} cases</div>
+              <div>
+                {data.yesterday_deaths.toLocaleString()}
+                {' '}
+                cases
+              </div>
             </div>
             <div className="case1">
               <div>Yesterday Open Cases</div>

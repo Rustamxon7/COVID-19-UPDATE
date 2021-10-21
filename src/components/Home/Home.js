@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPostsRequestData, fetchPostsRequestTotal } from '../../redux/covid-19/covidUpdate';
 import './Home.css';
@@ -7,7 +6,7 @@ import Total from './Total';
 import Loading from '../UI/Loading';
 import Countries from './Countries';
 
-const Home = (props) => {
+const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchPostsRequestData());
@@ -24,7 +23,7 @@ const Home = (props) => {
         <div>
           <Total totals={totals} />
           <div className="stats">STATS BY COUNTRY</div>
-          <Countries datas={datas}></Countries>
+          <Countries datas={datas} />
         </div>
       )}
     </div>

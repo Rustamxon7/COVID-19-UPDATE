@@ -1,12 +1,12 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-sequences */
-import React from 'react';
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable no-return-assign */
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 import './Countries.css';
 import { BsArrowRightCircle } from 'react-icons/bs';
-import { NavLink } from 'react-router-dom';
 import countryMap from '../Map/countryMap';
 
 const Countries = (props) => {
@@ -21,7 +21,7 @@ const Countries = (props) => {
   }
 
   const [counter, setCounter] = useState(20);
-  const [isEditing, setIsEditing] = useState(false);
+  const [, setIsEditing] = useState(false);
 
   const incrementCounter = () => {
     setCounter(counter + 25);
@@ -58,12 +58,14 @@ const Countries = (props) => {
       </div>
       <div className="more__less">
         {counter < 195 && (
-          <button className="button-three" onClick={incrementCounter}>
-            MORE {counter}
+          <button type="button" className="button-three" onClick={incrementCounter}>
+            MORE
+            {' '}
+            {counter}
           </button>
         )}
         {counter === 195 && (
-          <button className="button-three" onClick={decrementCounter}>
+          <button type="button" className="button-three" onClick={decrementCounter}>
             LESS
           </button>
         )}
