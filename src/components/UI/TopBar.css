@@ -1,0 +1,22 @@
+.top__bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgb(74, 81, 97) !important;
+  color: #fff;
+}
+
+.back {
+  color: #fff !important;
+}
+
+.date {
+  display: flex;
+}
+
+.settings {
+  display: flex;
+  gap: 1rem;
+  padding-right: 1rem;
+}

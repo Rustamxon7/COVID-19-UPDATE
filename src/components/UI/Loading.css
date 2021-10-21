@@ -1,0 +1,14 @@
+.loading {
+  min-height: 100vh;
+  background-color: rgb(73, 185, 230);
+}
+
+.loading > div {
+  min-width: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-size: 1.4rem;
+}
