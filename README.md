@@ -77,4 +77,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](?) licensed.
+This project is [MIT](https://github.com/Rustamxon7/COVID-19-UPDATE/blob/metrics-webapp-covid-19/MIT.md) licensed.
