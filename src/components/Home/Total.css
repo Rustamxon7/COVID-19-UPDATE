@@ -1,0 +1,41 @@
+.total {
+  background-color: #161d34;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.total__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__cases {
+  text-transform: lowercase;
+}
+
+.world__map {
+  width: 15rem;
+  filter: invert(48%) sepia(19%) saturate(76%) hue-rotate(86deg) brightness(178%) contrast(119%);
+  border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+  .total {
+    padding: 3rem;
+    font-size: 4rem;
+  }
+
+  .world__map {
+    width: 30rem;
+  }
+
+  .total__info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
