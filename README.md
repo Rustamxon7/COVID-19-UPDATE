@@ -18,6 +18,10 @@ See COVID-19 daily updates for all countries on one website! Select your country
 
 [Demo link](https://wizardly-albattani-e6a950.netlify.app/)
 
+## Presentation
+
+[Presentation video](https://www.loom.com/share/d1b52ac86e3e456db7956e4efb87bced)
+
 ## Getting Started
 
 To get a local copy up and run the app, follow these simple example steps.
