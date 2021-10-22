@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
-  padding: 1rem;
-  background-color: rgb(74, 81, 97) !important;
+  padding: 1.6rem 4rem 1rem;
+  background-color: #1e2745;
   color: #fff;
 }
 

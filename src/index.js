@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './redux/configureStore';

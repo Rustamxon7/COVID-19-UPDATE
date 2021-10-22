@@ -16,11 +16,13 @@
 
 .country__name {
   font-size: 1.1rem;
+  color: #9ab0f6;
+  font-weight: 500;
 }
 
 .stasistic {
   background-color: rgb(74, 81, 97) !important;
-  color: #fff;
+  color: #ececec;
   font-size: 1.6rem;
   padding: 0.4rem;
   display: flex;

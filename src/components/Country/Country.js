@@ -10,11 +10,13 @@ import './Country.css';
 import {
   BarChart, Bar, XAxis, CartesianGrid, Tooltip,
 } from 'recharts';
+
 import TopBar from '../UI/TopBar';
 import { fetchPostsRequestHistory } from '../../redux/covid-19/covidHistory';
 import LineChart from './Chart';
 import Loading from '../UI/Loading';
 import countryMap from '../Map/countryMap';
+import countryIso from '../Map/countryIso';
 
 const Country = () => {
   const location = useLocation();
@@ -72,6 +74,8 @@ const Country = () => {
     },
   ];
 
+  const iso = countryIso[data.name];
+
   return (
     <div key={data.id} className="country__container">
       <MediaQuery query="(min-device-width: 1024px)">
@@ -90,7 +94,7 @@ const Country = () => {
       <MediaQuery query="(min-device-width: 1024px)">
         <div className="country__header">
           <div className="country__map">
-            <img className="filter-green" onError={(e) => ((e.target.onerror = null), (e.target.src = 'https://mapsvg.com/static/maps/geo-calibrated/angola.svg'))} src={countryMap(data.id)} alt={data.id} width="100" height="100" />
+            <img className="filter-green" onError={(e) => ((e.target.onerror = null), (e.target.src = `https://mapsvg.com/static/maps/geo-calibrated/${data.name}.svg`))} src={countryMap(iso)} alt={data.id} width="100" height="100" />
           </div>
           <div className="country__name">
             <h1 className="country__name__title">{data.name}</h1>
@@ -106,7 +110,7 @@ const Country = () => {
         {!countInTimeout && (
           <div className="country__header">
             <div className="country__map">
-              <img className="filter-green" onError={(e) => ((e.target.onerror = null), (e.target.src = 'https://mapsvg.com/static/maps/geo-calibrated/angola.svg'))} src={countryMap(data.id)} alt={data.id} width="100" height="100" />
+              <img className="filter-green" onError={(e) => ((e.target.onerror = null), (e.target.src = `https://mapsvg.com/static/maps/geo-calibrated/${data.name}.svg`))} src={countryMap(iso)} alt={data.id} width="100" height="100" />
             </div>
             <div className="country__name">
               <h1 className="country__name__title">{data.name}</h1>

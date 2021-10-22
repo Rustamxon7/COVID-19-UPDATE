@@ -1,12 +1,12 @@
 import React from 'react';
-import loading from '../../assets/rooling.svg';
+import rolling from '../../assets/rolling.svg';
 import './Loading.css';
 
 function Loading() {
   return (
     <div className="loading">
       <div>
-        <img src={loading} alt="loading" />
+        <img src={rolling} alt="loading" />
         <p className="loading__text">Loading...</p>
       </div>
     </div>
