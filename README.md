@@ -38,7 +38,7 @@ Clone the repository with:
 ```
 git clone https://github.com/Rustamxon7/COVID-19-UPDATE.git
 ```
-or download [ZIP file](https://github.com/Rustamxon7/COVID-19-UPDATE/archive/refs/heads/dev.zip)
+or download [ZIP file](https://github.com/Rustamxon7/COVID-19-UPDATE/archive/refs/heads/metrics-webapp-covid-19.zip)
 
 ### Install
 To install all dependencies, run:
