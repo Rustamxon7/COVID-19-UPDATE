@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   padding: 5rem 4rem;
+  background-color: rgb(73, 185, 230);
 }
 
 .country__map {
@@ -16,7 +17,7 @@
 
 .country__name {
   font-size: 1.1rem;
-  color: #9ab0f6;
+  color: #303238;
   font-weight: 500;
 }
 
@@ -37,6 +38,7 @@
 
 .stat__info {
   display: flex;
+  background-color: rgb(74, 81, 97);
 }
 
 .chart__main > div {
