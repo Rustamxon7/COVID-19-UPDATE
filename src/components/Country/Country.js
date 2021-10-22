@@ -96,7 +96,7 @@ const Country = () => {
           <div className="country__map">
             <img className="filter-green" onError={(e) => ((e.target.onerror = null), (e.target.src = `https://mapsvg.com/static/maps/geo-calibrated/${data.name}.svg`))} src={countryMap(iso)} alt={data.id} width="100" height="100" />
           </div>
-          <div className="country__name">
+          <div className="country__name__inside">
             <h1 className="country__name__title">{data.name}</h1>
             <h2 className="country__name__today">
               Total:

@@ -15,7 +15,7 @@
   margin-right: auto;
 }
 
-.country__name {
+.country__name__inside {
   font-size: 1.1rem;
   color: #303238;
   font-weight: 500;
