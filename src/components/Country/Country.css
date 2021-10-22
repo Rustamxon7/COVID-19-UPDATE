@@ -16,7 +16,7 @@
 
 .country__name {
   font-size: 1.1rem;
-  color: #2c2f36;
+  color: #9ab0f6;
   font-weight: 500;
 }
 
@@ -116,6 +116,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .country__name {
+    color: #303238;
   }
 
   .cases {
