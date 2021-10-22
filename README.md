@@ -5,6 +5,10 @@
 
 See COVID-19 daily updates for all countries on one website! Select your country and observe daily and the last 7 days' information.
 
+>ABOUT COVID-19: The first signs of the virus appeared in China, in the city of Wuhan, on 31 December 2019. Since that date, the number of infections have multiplied across the continent and the world. As of the latest reports, cases in China have grown to 43 new cases since Thursday. Overall, 4,976 people are infected with the virus.
+
+![My Post](https://user-images.githubusercontent.com/69011963/138469601-7725ab62-71c1-4161-b1e6-7e1fc4632261.png)
+
 ## Built With
 
 - React
