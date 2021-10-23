@@ -16,7 +16,7 @@ See COVID-19 daily updates for all countries on one website! Select your country
 
 ## Live demo
 
-[Demo link](https://wizardly-albattani-e6a950.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/825f2be2-9288-4e83-bea4-ad2a52af40fc/deploy-status)](https://app.netlify.com/sites/covid-19-update-react/deploys)
 
 ## Presentation
 
