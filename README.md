@@ -16,7 +16,7 @@ See COVID-19 daily updates for all countries on one website! Select your country
 
 ## Live demo
 
-[![Live demo link](https://covid-19-update-react.netlify.app/)
+[Live demo link](https://covid-19-update-react.netlify.app/)
 
 ## Presentation
 
