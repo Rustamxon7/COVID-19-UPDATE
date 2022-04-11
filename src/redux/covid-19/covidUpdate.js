@@ -57,10 +57,7 @@ const reducer = (state = initialState, action) => {
 
 let date = new Date();
 
-const month = date.getMonth() + 1;
-const day = date.getDate() - 2;
-const year = date.getFullYear();
-date = `${year}-${month}-${day}`;
+date = '2021-01-01';
 
 export const fetchPostsRequestData = () => async (dispatch) => {
   const request = await fetch(`https://api.covid19tracking.narrativa.com/api/${date}`);
